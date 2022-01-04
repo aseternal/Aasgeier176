@@ -1,0 +1,19 @@
+.headerWrapper {
+    width: 100%;
+    background-color: gray;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'UnifrakturCook', cursive;
+
+    &__line1 {
+        font-size: 60px;
+    }
+
+    &__line2 {
+        font-size: 30px;
+        margin-top: -40px;
+    }
+}

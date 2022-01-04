@@ -1,0 +1,29 @@
+// .navigationWrapper {
+//     position: absolute;
+//     width: 250px;
+//     background-color: silver;
+//     left: -200px;    
+//     height: 100%;
+//     top: 0;
+//     z-index: 100;
+//     transition: left 1s;
+//     padding: 10px;
+
+//     &__item {
+//         font-weight: 700;
+//         margin: 5px;
+//         font-size: 20px;
+//     }
+
+//     &__item:hover {
+//         color: red;
+//         cursor: pointer;
+//         margin: 5px;
+//         font-size: 20px;
+//     }
+
+// }
+
+// .navigationWrapper:hover {
+//     left: 0px;        
+// }
