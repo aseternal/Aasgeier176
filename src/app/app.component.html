@@ -1,12 +1,22 @@
-<app-header>
+<div *ngIf="password != 'ui'">
+    <input [(ngModel)]="password">
+</div>
+<div *ngIf="password == 'ui'">
+    <app-header>
 
-</app-header>
-<app-navigation>
+    </app-header>
+    <app-navigation>
 
-</app-navigation>
+    </app-navigation>
 
-<div class="content">
-    Welcome to the nest of the vultures.
-
-    TODO: Content
+    <div class="content">
+        Welcome to the nest of the vultures.<br>
+        <br>
+        <br>
+        300<br>
+        AASGeier<br>
+        INF<br>
+        <br>
+        TODO: Content
+    </div>
 </div>
