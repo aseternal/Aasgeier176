@@ -15,4 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showMenu() {
+    this.applicationinfoService.navigationVisible = true;
+  }
 }

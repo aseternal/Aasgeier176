@@ -17,4 +17,4 @@ export const environment = {
 
 
 // For building
-// ng build --prod --base-href "/tipprunde/"
+// ng build --configuration production --base-href "/aasgeier/"

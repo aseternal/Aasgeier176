@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApplicationinfoService } from 'src/app/service/applicationinfo.service';
 
 @Component({
@@ -13,10 +14,19 @@ export class NavigationComponent implements OnInit {
     { name: 'Impressum' }
   ]
   constructor(
-    public applicationinfoService: ApplicationinfoService
+    public applicationinfoService: ApplicationinfoService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
   }
 
+  closeNavigation() {
+    this.applicationinfoService.navigationVisible = false;
+  }
+
+  routingTo(route: any) {
+    this.router.navigate(['../' + route]);
+    this.applicationinfoService.navigationVisible = false;
+  }
 }

@@ -1,0 +1,53 @@
+<div *ngIf="id == 0">
+
+</div>
+<div *ngIf="id == 1">
+    <!-- Zwei Tage Events -->
+    <div class="event__header"> 
+        
+    </div>
+
+    <!-- ConstructionDay -->
+    <div class="event__item defaultShadow" (click)="toggleItem('event1')">
+        <div class="event__item__eventIcon"></div>
+        <div [innerHTML]="'Event.ConstructionDay.EventName' | translate"></div>
+        <div class="event__item__toggleIcon">
+            <i class="fas " [ngClass]="getAngle('event1')"></i>
+        </div>
+    </div>
+    <div class="event__item__content" *ngIf="checkIfItemIsToggled('event1') == false">
+        <div [innerHTML]="'Event.ConstructionDay.Content1' | translate"></div>
+        <app-tipp tippText="Event.ConstructionDay.Tipp1"></app-tipp>
+    </div>
+</div>
+
+<div *ngIf="id == 2">
+    <!-- Strongest survivor -->
+
+    <!-- Day 1 -->
+    <div class="event__item defaultShadow" (click)="toggleItem('eventSS1')">
+        <div class="event__item__eventIcon"></div>
+        <div [innerHTML]="'Event.StrongestSurvivor.Day1.EventName' | translate"></div>
+        <div class="event__item__toggleIcon">
+            <i class="fas " [ngClass]="getAngle('eventSS1')"></i>
+        </div>
+    </div>
+    <div class="event__item__content" *ngIf="checkIfItemIsToggled('eventSS1') == false">
+        <div [innerHTML]="'Event.StrongestSurvivor.Day1.Content1' | translate"></div>
+        <app-tipp tippText="Event.StrongestSurvivor.Day1.Tipp1"></app-tipp>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="event__item defaultShadow" (click)="toggleItem('eventSS2')">
+        <div class="event__item__eventIcon"></div>
+        <div [innerHTML]="'Event.StrongestSurvivor.Day2.EventName' | translate"></div>
+        <div class="event__item__toggleIcon">
+            <i class="fas " [ngClass]="getAngle('eventSS2')"></i>
+        </div>
+    </div>
+    <div class="event__item__content" *ngIf="checkIfItemIsToggled('eventSS2') == false">
+        <div [innerHTML]="'Event.StrongestSurvivor.Day2.Content1' | translate"></div>
+        <app-tipp tippText="Event.StrongestSurvivor.Day2.Tipp1"></app-tipp>
+    </div>
+
+</div>

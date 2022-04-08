@@ -1,4 +1,17 @@
-<div class="headerWrapper">
- <label class="headerWrapper__line1">{{ applicationinfoService.clanName }}</label><br>
- <label class="headerWrapper__line2">Better twitch when we look at you</label>
+<div class="header">
+    <div class="header__top">
+        <div class="header__top__smallitem">
+
+        </div>
+        <div class="header__top__center">
+            <label class="header__line1">{{ applicationinfoService.clanName }}</label>
+        </div>
+        <div class="header__top__smallitem header__top__menu">
+            <i class="fas fa-align-justify fa-lg" (click)="showMenu()"></i>
+        </div>
+        
+    </div>
+    <div class="header__subtitle">
+        <label class="header__line2">Better twitch when we look at you</label>
+    </div>    
 </div>

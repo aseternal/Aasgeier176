@@ -1,3 +1,22 @@
-<div>
-  
+<div class="navigation" *ngIf="applicationinfoService.navigationVisible">
+  <div class="navigation__top">
+      <div class="navigation__top__text">
+        Navigation
+      </div>
+      <div class="navigation__top__close">
+        <i class="fas fa-times fa-lg" (click)="closeNavigation()"></i>
+      </div>
+  </div>
+  <div class="navigation__item defaultShadow" (click)="routingTo('')">
+    Home
+  </div>
+
+  <div class="navigation__item  defaultShadow" (click)="routingTo('event/1')">
+    Events
+  </div>
+
+  <div class="navigation__item  defaultShadow" (click)="routingTo('event/2')">
+    Strongest survivor
+  </div>
+
 </div>

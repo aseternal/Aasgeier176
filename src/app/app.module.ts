@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './controls/navigation/navigation.component';
 import { HeaderComponent } from './controls/header/header.component';
 import { FormsModule } from '@angular/forms';
+import { EventsComponent } from './controls/events/events.component';
+import { WelcomeComponent } from './controls/welcome/welcome.component';
+import { TranslatePipe } from './pipes/translation.pipe';
+import { TippComponent } from './controls/tipp/tipp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    HeaderComponent
+    HeaderComponent,
+    EventsComponent,
+    WelcomeComponent,
+    TranslatePipe,
+    TippComponent
   ],
   imports: [
     BrowserModule,
